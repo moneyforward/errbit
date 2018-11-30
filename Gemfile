@@ -4,11 +4,11 @@ RAILS_VERSION = '~> 4.2.8'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
+gem 'actionmailer', '>= 4.2.11', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
 gem 'railties', RAILS_VERSION
 
-gem 'actionmailer_inline_css'
+gem 'actionmailer_inline_css', '>= 1.5.3'
 gem 'decent_exposure'
 gem 'devise', '~> 3.5.5'
 gem 'dotenv-rails'
@@ -20,10 +20,10 @@ gem 'haml'
 gem 'htmlentities'
 gem 'kaminari', '>= 0.16.3'
 gem 'mongoid', '5.0.2'
-gem 'mongoid_rails_migrations'
+gem 'mongoid_rails_migrations', '>= 1.0.1'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'useragent'
 
 # Please don't update hoptoad_notifier to airbrake.
